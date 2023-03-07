@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form lấy survey khách hàng</title>
+</head>
+<body>
+       <h2>Market Research Survey</h2>
+       <h4>Please take a few moments to complete this satisfaction survey.</h4>
+       <h3>what is your age range?</h3>
+       <select name="range age">
+           <option value="18-24">18-24</option>
+           <option value="25-34">25-34</option>
+           <option value="35-50">35-50</option>
+           <option value="50+">50+</option>
+       </select>
+
+       <h3>what is your yearly income range</h3>
+       <select name="range income">
+           <option value="$0-$25,00">$0-$25,00</option>
+           <option value="$26,00-$50,00">26,00$-$50,00</option>
+           <option value="$51,00-$75,00">$51,00-$75,00</option>
+           <option value="$76,00+">$76,00+</option>
+       </select>
+       <h3>Gender</h3>
+       <input type="radio" name="gender">Male<br>
+       <input type="radio" name="gender">Female<br>
+       <h3>Which of the following products have our purchased in the last 2 months.Please check all that apply</h3>
+       <input type="checkbox" name="product" value="pr1">Product 1<br>
+       <input type="checkbox" name="product" value="pr2">Product 2<br>
+       <input type="checkbox" name="product" value="pr3">Product 3<br>
+       <h3>How often would you use our new product</h3>
+       <input type="radio" name="how" >Daily<br>
+       <input type="radio" name="how" >Weekly<br>
+       <input type="radio" name="how" >Monthly<br>
+       <h3>What would you pay for the new product?</h3>
+       <label>$</label>
+       <table>
+              <tr>
+                  <th><input type="text"></th>
+                  <th><input type="text"></th>
+              </tr>
+              <tr>
+                  <th>Dollars</th>
+                  <th>Cents</th>
+              </tr>
+       </table>
+       <h3>What features would you like to see in the new product</h3>
+       <textarea cols="100px" rows="20px"></textarea>
+       <h4>Please rate your level of agreement with the following statements</h4>
+       <table border="1">
+           <tr>
+               <th></th>
+               <td>Strongly Disagree</td>
+               <td>Disagree</td>
+               <td>Agree</td>
+               <td>Strongly agree</td>
+           </tr>
+           <tr>
+               <th>Our product are priced fairly</th>
+               <td><input type="radio" name="priced" value="1"><br>1</td>
+               <td><input type="radio" name="priced" value="2"><br>2</td>
+               <td><input type="radio" name="priced" value="3"><br>3</td>
+               <td><input type="radio" name="priced" value="4"><br>4</td>
+           </tr>
+           <tr>
+               <th>Our product are hight quality</th>
+               <td><input type="radio" name="hight" value="1"><br>1</td>
+               <td><input type="radio" name="hight" value="2"><br>2</td>
+               <td><input type="radio" name="hight" value="3"><br>3</td>
+               <td><input type="radio" name="hight" value="4"><br>4</td>
+           </tr>
+           <tr>
+               <th>You would are high quality our product to a friend or coworker</th>
+               <td><input type="radio" name="coworker" value="1"><br>1</td>
+               <td><input type="radio" name="coworker" value="2"><br>2</td>
+               <td><input type="radio" name="coworker" value="3"><br>3</td>
+               <td><input type="radio" name="coworker" value="4"><br>4</td>
+           </tr>
+       </table>
+       <input type="submit" name="submit" value="Submit">
+</body>
+</html>

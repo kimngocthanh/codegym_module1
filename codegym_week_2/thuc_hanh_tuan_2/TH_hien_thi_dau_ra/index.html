@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>tính bình phương của 1 số bằng function</h2>
+<p>.Tham số truyền vào là một số</p>
+<p>.Kết quả là bình phương của số đó</p>
+<button onclick="binhphuong()" >nhập thử đi</button>
+    <p id="bp"></p>
+<script>
+ //   function showMessage() {
+        //alert('xinchao');
+        //document.getElementById("messageDiv").innerHTML='xin chao';
+        //document.write('xin chào');
+        //console.log('xin chào');
+ //   }
+      function binhphuong() {
+          let a= prompt("nhập số muốn bình phương","ví dụ: 8");
+          if (a != null)
+          {
+              document.getElementById("bp").innerHTML= Math.pow(a, 2);
+          };
+      };
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8afa5866-8058-4494-91f0-a942b1eba91a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_don_gian/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_don_gian/.idea/BT_tao_form_don_gian.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_don_gian/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_don_gian/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_don_gian/form_đon_gian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_nguoi_dung/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_nguoi_dung/.idea/BT_tao_form_nguoi_dung.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_nguoi_dung/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_nguoi_dung/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/BT_tao_form_nguoi_dung/form_dang_ky.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_co_ban/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_co_ban/.idea/TH_tao_bang_co_ban.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_co_ban/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_co_ban/abcd.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_co_ban/tao_bang_co_ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_nang_cao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_nang_cao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_nang_cao/.idea/tao_bang_nang_cao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_nang_cao/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_nang_cao/bang_ngan_cao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_table/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_table/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_table/.idea/tao_bang_table.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_bang_table/vi_du_tao_bang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_form_lay_survey_khach_hang/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_form_lay_survey_khach_hang/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_form_lay_survey_khach_hang/.idea/tao_form_lay_survey_khach_hang.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_form_lay_survey_khach_hang/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap_week_1/tao_form_lay_survey_khach_hang/form_survey_khach_hang.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TH_tao_bang_co_ban/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TH_tao_form_google/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TH_tao_form_google/.idea/TH_tao_form_google.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TH_tao_form_google/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TH_tao_form_google/Tao_form_tim_kiem_google.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../su_kien_onchange/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../su_kien_onchange/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../su_kien_onchange/.idea/su_kien_onchange.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../su_kien_onchange/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_nhung_ma_js/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_nhung_ma_js/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_nhung_ma_js/.idea/test_nhung_ma_js.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_nhung_ma_js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_nhung_ma_js/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_bang_nang_cao/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_bang_nang_cao/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_bang_nang_cao/.idea/thuc_hanh_tao_bang_nang_cao.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_bang_nang_cao/bang_nang_cao.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_form/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_form/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_form/.idea/thuc_hanh_tao_form.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_tao_form/simpleform.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2MfuBFQOn4rQpE8FtGlcaA1qZJD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8afa5866-8058-4494-91f0-a942b1eba91a" name="Changes" comment="" />
+      <created>1678170821116</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678170821116</updated>
+      <workItem from="1678170822329" duration="1979000" />
+      <workItem from="1678194763315" duration="71000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
