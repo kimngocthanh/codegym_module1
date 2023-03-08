@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="a">
+<input type="text" id="b"><br>
+<input type="button" value="Addition(+)" onclick="tinh('+')">
+<input type="button" value="Subtraction(-)" onclick="tinh('-')">
+<input type="button" value="Multiplication(*)" onclick="tinh('*')">
+<input type="button" value="Division(/) " onclick="tinh('/')">
+<p id="kq">Result Division</p>
+<script>
+    function tinh(operator) {
+        let a = document.getElementById("a").value*1;
+        let b = document.getElementById("b").value*1;
+        if (operator =='+'){
+            document.getElementById("kq").innerHTML=a+b;
+        }
+        else if (operator == '-') {
+            document.getElementById("kq").innerHTML=a-b;
+        }
+        else if (operator == '*') {
+            document.getElementById("kq").innerHTML=a*b;
+        }
+        else
+            document.getElementById("kq").innerHTML=a/b;
+
+
+    }
+
+
+</script>
+</body>
+</html>

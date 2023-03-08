@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Ứng dụng chuyển đổi tiền tệ</h2>
+<label>Amount</label>
+<input type="text" id="sotien">
+<label> From Currency </label>
+<select id="from">
+    <option value="vnd">Việt Nam</option>
+    <option value="usd">USD</option>
+</select>
+<label>To Currency</label>
+<select id="to">
+    <option value="usd">USD</option>
+    <option value="vnd">Việt Nam</option>
+</select>
+<button onclick="doi()">Convert</button>
+<script>
+    function doi() {
+        let tienChuyen = document.getElementById("sotien").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        if (from == to) {
+            alert(tienChuyen);
+        } else if (from == "vnd" && to == "usd") {
+            alert(tienChuyen / 24000);
+        } else {
+            alert(tienChuyen * 24000);
+        }
+let a =prompt()
+    }
+
+</script>
+</body>
+</html>

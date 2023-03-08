@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bien_kieudulieu_toantu.js"></script>
+</head>
+<body>
+<button onclick="dtb()">tính</button>
+<p id="diemtrungbinh"></p>
+<button onclick="doinhietdo()">đổi</button>
+<p id="doinhiet"></p>
+<button onclick="dientichhinhtron()">diện tích hình tròn</button>
+<p id="Stron"></p>
+<button onclick="chuvihinhtron()">Chu vi hình tròn</button>
+<p id ="CVtron"></p>
+<script>
+    function dtb () {
+        let diemToan= prompt("nhập điểm Toán")*1;
+        alert(diemToan);
+        let diemLy= prompt("nhập diểm Lý")*1;
+        alert((diemLy))
+        let diemHoa= prompt("nhập điểm Hóa")*1;
+        alert(diemHoa);
+        document.getElementById("diemtrungbinh").innerHTML ="diểm trung bình"+ (diemHoa+diemLy+diemToan)/3;
+    }
+</script>
+<script>
+    function doinhietdo () {
+        let Celsius = prompt("nhâp nhiet độ ")*1;
+        document.getElementById("doinhiet").innerHTML = "độ F  =" +  (9/5* Celsius+32);
+    }
+</script>
+<script>
+    function dientichhinhtron() {
+        let bankinh = prompt("nhập bán kính")*1
+        const PI= 3.14;
+        document.getElementById("Stron").innerHTML = "dien tich hình tròn = " + PI*Math.pow(bankinh,2);
+    }
+    function chuvihinhtron() {
+        let bankinh = prompt ("nhập bán kính")*1;
+        const PI= 3.14;
+        document.getElementById("CVtron").innerHTML = "chu vi hình tròn =" + 2*PI*bankinh;
+    }
+</script>
+
+</body>
+</html>
