@@ -7,4 +7,20 @@
 <body>
 
 </body>
+<script>
+    let soPhut = prompt("nhập số phút")
+    const PHICODINH = 25000;
+    if (soPhut >=200) {
+        let phi = (soPhut-200)*200+150*400+50*600;
+        document.write("phí="+phi);
+    }
+    else if (soPhut >=50) {
+        let phi = (soPhut-50)*400+50*600 ;
+        document.write("phí= "+phi);
+    }
+    else {
+        let phi = soPhut*600;
+        document.write("phí="+phi);
+    }
+</script>
 </html>
