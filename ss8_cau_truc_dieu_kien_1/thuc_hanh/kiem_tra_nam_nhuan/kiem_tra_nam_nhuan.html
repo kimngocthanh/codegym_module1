@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapNam = prompt("nhap nam");
+    if (nhapNam % 4 == 0) {
+        if (nhapNam % 100 == 0) {
+            if (nhapNam % 400 ==0){
+                document.write("năm nhuận");
+            }
+            else {
+                document.write("năm ko nhuận");
+            }
+        }
+        else {
+            document.write("năm nhuận");
+        }
+    }
+    else {
+        document.write("năm ko nhuận")
+    }
+
+</script>
+</body>
+</html>

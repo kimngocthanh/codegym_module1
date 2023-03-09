@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="button" value="Tính số ngày" onclick="tinh()">
+<input type="text" id="nhapThang">
+<p id="soNgay"></p>
+<body>
+<script>
+    function tinh() {
+        let thang = +document.getElementById("nhapThang").value;
+        switch (thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                document.getElementById("soNgay").innerHTML = "31 ngày";
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                document.getElementById("soNgay").innerHTML = "30 ngày";
+                break;
+            case 2:
+                let nam = prompt("nhap năm");
+                if (nam % 400 == 0 || (nam % 4 == 0 && nam % 100 != 0)) {
+                    document.getElementById("soNgay").innerHTML = "29 ngày";
+                    break;
+                } else {
+                    document.getElementById("soNgay").innerHTML = "28 ngày";
+                    break;
+                }
+            default:
+                document.getElementById("soNgay").innerHTML = "ko hợp lệ";
+                break;
+
+        }
+    }
+</script>
+</body>
+</html>
