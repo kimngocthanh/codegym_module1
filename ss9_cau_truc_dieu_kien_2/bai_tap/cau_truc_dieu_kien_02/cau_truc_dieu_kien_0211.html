@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let thuNhap = +prompt("nhập thu nhập cá nhân");
+    if (thuNhap < 0) {
+        document.write("số thu nhập ko hợp lệ");
+    } else {
+        if (thuNhap <= 60000000) {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 5 / 100));
+        } else if (thuNhap <= 120000000) {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 10 / 100));
+        } else if (thuNhap <= 216000000) {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 15 / 100));
+        } else if (thuNhap <= 384000000) {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 20 / 100));
+        } else if (thuNhap <= 624000000) {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 25 / 100));
+        } else if (thuNhap <= 960000000) {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 30 / 100));
+        } else {
+            document.write("thu nhập đã tính thuế = " + (thuNhap - thuNhap * 35 / 100));
+        }
+    }
+</script>
+</html>

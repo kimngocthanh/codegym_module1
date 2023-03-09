@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = prompt("nhập a");
+    let b = prompt("nhập b");
+    let c = prompt("nhập c");
+    let denta = b * b - 4 * a * c;
+    if (a == 0) {
+        if (b == 0 && c == 0) {
+            document.write("phuong trinh vô số nghiệm");
+        } else if (b == 0 && c != 0) {
+            document.write("phương trình vô nghiệm");
+        } else {
+            let nghiemX = (-c / b);
+            document.write("nghiệm của phương trình là " + nghiemX);
+        }
+    } else {
+        if (denta < 0) {
+            document.write("phương trình vô nghiệm");
+        } else if (denta == 0) {
+            let nghiemX = -b / (2 * a);
+            document.write("nghiệm của phương trình là " + nghiemX);
+        } else {
+            let nghiemX1 = (-b + Math.sqrt(denta)) / (2 * a);
+            let nghiemX2 = (-b - Math.sqrt(denta)) / (2 * a);
+            document.write("nghiệm của phương trình là X1=" + nghiemX1 + "và X2 = " + nghiemX2);
+
+        }
+    }
+</script>
+</html>

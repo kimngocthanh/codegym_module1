@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let soDien = prompt("nhập số điện đã dùng");
+    let giaDien;
+    if (soDien < 0) {
+        document.write("số điện nhập ko hợp lệ");
+    } else {
+        if (soDien <= 50 && soDien >= 0) {
+            giaDien = soDien * 1.678;
+            document.write("số tiền điện là :" + giaDien);
+        } else if (soDien <= 100) {
+            giaDien = (soDien - 50) * 1.734 + 1.678 * 50;
+            document.write("số tiền điện là :" + giaDien);
+        } else if (soDien <= 200) {
+            giaDien = (soDien - 100) * 2.014 + 50 * 1.678 + 50 * 1.734;
+            document.write("số tiền điện là :" + giaDien);
+        } else if (soDien <= 300) {
+            giaDien = (soDien - 200) * 2.536 + 50 * 1.678 + 50 * 1.734 + 100 * 2.014;
+            document.write("số tiền điện là :" + giaDien);
+        } else if (soDien <= 400) {
+            giaDien = (soDien - 300) * 2.834 + 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536;
+            document.write("số tiền điện là :" + giaDien);
+        } else {
+            giaDien = (soDien - 400) * 2.972 + 50 * 1.678 + 50 * 1.734 + 100 * 2.014 + 100 * 2.536 + 100 * 2.834;
+            document.write("số tiền điện là :" + giaDien);
+        }
+    }
+</script>
+</html>
