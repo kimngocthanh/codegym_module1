@@ -5,14 +5,19 @@
     <title>Title</title>
 </head>
 <body>
-
+<p>Nhập tuổi</p>
+<input type="text" id="nhapTuoi">
+<button onclick="kiemTra()">Kiểm tra</button>
+<p id="ketQua"></p>
 </body>
 <script>
-    let tuoi = prompt("nhap tuoi");
-    if (tuoi >= 15) {
-        alert("đủ điều kiện học lớp 10");
-    } else {
-        alert("không đủ điều kiện học lớp 10");
+    function kiemTra() {
+        let tuoi = document.getElementById("nhapTuoi").value;
+        if (tuoi >= 15) {
+            document.getElementById("ketQua").innerHTML="đủ điều kiện học lớp 10";
+        } else {
+            document.getElementById("ketQua").innerHTML="không đủ điều kiện học lớp 10";
+        }
     }
 </script>
 </html>

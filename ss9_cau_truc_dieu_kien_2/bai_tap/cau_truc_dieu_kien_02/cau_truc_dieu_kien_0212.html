@@ -5,9 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-
+<p>Nhập số tiền bạn muốn vay</p>
+<input type="text" id="tienGoc">
+<p>Nhập thời gian vay trong bao nhiêu tháng</p>
+<input type="text" id="thoiGian">
+<p>Nhập lãi suất phần trăm theo tháng</p>
+<input type="text" id="laiSuat">
+<p id="soTienlai"></p>
+<button onclick="tinh()">tính</button>
 </body>
 <script>
-
+    function tinh() {
+        let soTienVay = document.getElementById("tienGoc").value;
+        let thoiGianVay = document.getElementById("thoiGian").value;
+        let laiSuat = document.getElementById("laiSuat").value;
+        let soTienGoc = soTienVay / thoiGianVay;
+        let soTienLaiThang = (soTienVay * laiSuat) / thoiGianVay;
+        let soTienTraThang = soTienGoc + soTienLaiThang;
+        document.getElementById("soTienlai").innerText = ((soTienTraThang * thoiGianVay) - soTienGoc);
+    }
 </script>
 </html>

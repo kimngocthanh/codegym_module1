@@ -5,14 +5,22 @@
     <title>Title</title>
 </head>
 <body>
+<p>Nhập a</p>
+<input type="text" id="a">
+<p>Nhap b</p>
+<input type="text" id="b"><br>
+<button onclick="tinh()">tính</button>
+<p id="ketQua"></p>
 </body>
 <script>
-    let a = prompt("nhap a");
-    let b = prompt("nhap b");
-    if (a % b == 0) {
-        alert("a chia hết cho b");
-    } else {
-        alert("a không chia hết cho b");
+    function tinh() {
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        if (a % b == 0) {
+            document.getElementById("ketQua").innerHTML = "a chia hết cho b";
+        } else {
+            document.getElementById("ketQua").innerText = "a không chia hết cho b";
+        }
     }
 </script>
 
