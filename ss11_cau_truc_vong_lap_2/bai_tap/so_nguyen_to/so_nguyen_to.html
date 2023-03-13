@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = +prompt("nhập số lượng số nguyên tố mà bạn muốn in");
+    let cout = 0;
+    let n = 2;
+
+    while (cout < number) {
+        let isPrime = true;
+        for (let i = 2; i <=Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            console.log(n + " là số nguyên tố");
+            cout++;
+
+        }n++;
+
+    }
+    // let a = prompt("nhập số lượng bạn muốn in");
+    // let count = 0;
+    // let number = 2;
+    // while (count < a) {
+    //     let isPrime = true;
+    //     if (number == 2 || number == 3) {
+    //         console.log(number + "  là số nguyên tố");
+    //         number++;
+    //         count++;
+    //         continue;
+    //     }
+    //     for (let i = 2; i <= Math.sqrt(number); i++) {
+    //         if (number % i == 0) {
+    //             isPrime = false;
+    //             break;
+    //         }
+    //     }
+    //     if (isPrime) {
+    //         console.log(number + " là số nguyên tố")
+    //         count++;
+    //     }
+    //     number++;
+    // }
+
+
+</script>
+</body>
+</html>

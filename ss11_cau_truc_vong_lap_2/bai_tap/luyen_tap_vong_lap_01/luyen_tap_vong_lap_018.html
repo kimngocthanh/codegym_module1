@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="choi()">Chơi</button>
+<script>
+    function choi() {
+        let gioiHan = +prompt("nhập giới hạn trong khoảng bạn muốn dự đoán");
+        let soNgauNhien = Math.floor(Math.random() * gioiHan)
+        console.log(soNgauNhien);
+        for (let i = 0; i < 4; i++) {
+            let soDuDoan = +prompt("nhập số bạn dự đoán");
+            if (soDuDoan < soNgauNhien) {
+                alert("số bạn dự đoán nhỏ hơn số ngẫu nhiên mời bạn nhập lại");
+            } else if (soDuDoan > soNgauNhien) {
+                alert("số bạn dự đoán lớn hơn số ngẫu nhiên mời bạn nhập lại");
+            } else {
+                alert("bạn dự đoán đúng");
+                break;
+            }
+
+        }
+    }
+
+
+</script>
+</body>
+</html>

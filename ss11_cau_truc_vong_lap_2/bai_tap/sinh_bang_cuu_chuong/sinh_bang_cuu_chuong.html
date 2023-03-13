@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    let i = 1;
+    let j = 1;
+    let table;
+    table = "<table border='1'>"
+    for (i = 1; i <= 10; i++) {
+        table = table + "<tr>";
+        for (j = 1; j <= 10; j++) {
+            table = table + "<td>" + (i + "*" + j + "=" + i * j) + "</td>";
+        }
+        table = table + "<tr>"
+    }
+    document.write(table);
+
+
+</script>
+</body>
+</html>
