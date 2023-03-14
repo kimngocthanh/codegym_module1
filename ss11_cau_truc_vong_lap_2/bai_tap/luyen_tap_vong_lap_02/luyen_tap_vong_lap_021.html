@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soThuNhat =1;
+    let soThuHai =1;
+    let soKeTiep;
+    let a =prompt("bạn muốn in bao nhiêu phần tử trong dãy")
+    let i=0
+    while (i<a) {
+        soKeTiep=soThuNhat+soThuHai;
+        soThuHai=soThuNhat;
+        soThuNhat=soKeTiep;
+        console.log(soKeTiep);
+        i++;
+    }
+</script>
+</body>
+</html>
