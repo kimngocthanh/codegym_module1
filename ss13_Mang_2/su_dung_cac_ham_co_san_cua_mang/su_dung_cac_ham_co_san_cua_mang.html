@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let phanTu = ["Hai", "Hoa", "Thành", "Thái"];
+    let a = phanTu.join();
+    console.log(a);
+
+</script>
+<script>
+    let number = window.prompt();
+    let str = number.toString();
+    let noiMang = [str[0]];
+    for (let i = 1; i < str.length; i++) {
+        if ((str[i - 1] % 2 == 0) && (str[i] % 2 == 0)) {
+            noiMang.push('-', str[i]);
+        } else {
+            noiMang.push(str[i]);
+        }
+    }
+    console.log(noiMang.join(''));
+</script>
+<script>
+    a = 'abCDNADads';
+    var inHoa = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+    var inThuong = 'qwertyuiopasdfghjklzxcvbnm';
+    var mang = [];
+    for (var i = 0; i < a.length; i++) {
+        if (inHoa.indexOf(a[i]) !== -1) {
+            mang.push(a[i].toLowerCase());
+        } else if (inThuong.indexOf(a[i]) !== -1) {
+            mang.push(a[i].toUpperCase());
+        } else {
+            mang.push(a[i]);
+        }
+    }
+    document.write(mang.join(''));
+
+</script>
+</body>
+</html>

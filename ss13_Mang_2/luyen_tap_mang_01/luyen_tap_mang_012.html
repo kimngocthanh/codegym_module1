@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var mangSoNguyen = [11, 22, 33, 5, 2, 44, 56, 1, 8, 9];
+    var max = mangSoNguyen[0];
+    var viTri = 0;
+    for (var i = 0; i < mangSoNguyen.length; i++) {
+        if (max < mangSoNguyen[i]) {
+            max = mangSoNguyen[i];
+            viTri = i;
+        }
+    }
+    console.log(max);
+    console.log(viTri);
+</script>
+</body>
+</html>
