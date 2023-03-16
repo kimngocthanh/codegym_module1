@@ -8,14 +8,20 @@
 <script>
     var mangSoNguyen = [11, 22, 33, 5, 2, 44, 56, 1, 8, 9];
     var soNguyenV = +prompt();
+    var m =false;
     for (var i = 0; i < mangSoNguyen.length; i++) {
         if ( soNguyenV == mangSoNguyen[i]) {
-            alert("V is in the array");
+            m=true;
+            break;
         }
-        if (mangSoNguyen[i]=10) {
-            alert("V is not in the array");
-        }
+    }if (m==true) {
+        alert("V is in the array")
+    }if (m==false) {
+        alert("V is not in the array");
     }
+
+
+
 </script>
 </body>
 </html>
