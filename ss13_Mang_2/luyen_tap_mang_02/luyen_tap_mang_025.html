@@ -6,25 +6,25 @@
 </head>
 <body>
 <script>
-    var a =[];
-    var b =[];
-    for (let i=0; i<10;i++) {
-        a[i]=prompt("nhập a"+"["+i+"]");
-    }
-    for (let j=0; j<10;j++) {
-        b[j]=prompt("nhập b"+"["+j+"]");
-    }
-    for (let i=0; i<a.length; i++) {
-        for (let j=0; j<b.length; j++){
-            if (a[i]!=b[j]){
-                document.write("2 hàm ko giống nhau");
-                break;
-            }else {
-                document.write("2 hàm giống nhau");
+    var a = "kim ngoc thanh ";
+    var b = "kim ngac thanh ";
+    var c= true;
+    if (a.length != b.length) {
+        console.log("2 chuỗi khác nhau");
+    } else {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i]!==b[i]){
+                c=false;
                 break;
             }
+        }if (c==false){
+            console.log("2 chuỗi khác nhau");
+        }else {
+            console.log("2 chuỗi giống nhau");
         }
+
     }
+
 </script>
 </body>
 </html>

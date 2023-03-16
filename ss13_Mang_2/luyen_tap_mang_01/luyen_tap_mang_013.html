@@ -7,15 +7,15 @@
 <body>
 <script>
     var mangSoNguyen = [11, 22, 33, 5, 2, 44, 56, 1, 8, 9];
-    var max = mangSoNguyen[0];
-    var sum =0
+    var soLonNhat = mangSoNguyen[0];
+    var tong =0;
     for (let i = 0; i < mangSoNguyen.length; i++) {
-        sum+=mangSoNguyen[i];
-        if (max < mangSoNguyen[i]) {
-            max = mangSoNguyen[i]
+        tong+=mangSoNguyen[i];
+        if (soLonNhat < mangSoNguyen[i]) {
+            soLonNhat = mangSoNguyen[i]
         }
-    }console.log("số lớn nhất trong mảng = "+max)
-    console.log(("trung bình của dãy = " + sum/(mangSoNguyen.length) ));
+    }console.log("số lớn nhất trong mảng = "+soLonNhat)
+    console.log(("trung bình của dãy = " + tong/(mangSoNguyen.length) ));
 </script>
 </body>
 </html>
