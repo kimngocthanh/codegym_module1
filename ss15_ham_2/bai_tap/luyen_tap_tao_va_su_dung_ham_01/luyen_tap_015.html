@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let flag = true;
+
+    function doSao(sao) {
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (sao != ngoiSao[i]) {
+                flag = false;
+                break;
+            } else {
+                sao = i;
+                for (let i = 0; i < chomSao.length; i++) {
+                    if (i == chomSao[i]) {
+                        flag = true;
+                        break;
+                    }
+                }
+            }
+        }
+        if (flag==true) {
+            console.log("yes");
+        } else {
+            console.log("no");
+        }
+    } doSao(prompt("nhập sao"));
+</script>
+</body>
+</html>

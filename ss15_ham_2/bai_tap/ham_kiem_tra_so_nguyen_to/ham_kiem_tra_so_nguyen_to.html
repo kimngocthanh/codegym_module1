@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraNumber(n) {
+        var flag = true;
+        if (n < 2) {
+            flag = false;
+        } else {
+            for (var i = 2; i < n - 1; i++) {
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag) {
+            console.log(n + " là số nguyên tố");
+        } else {
+            console.log(n + " không phải là số nguyên tố");
+        }
+    }
+
+    kiemTraNumber(prompt("nhập number"))
+</script>
+</body>
+</html>

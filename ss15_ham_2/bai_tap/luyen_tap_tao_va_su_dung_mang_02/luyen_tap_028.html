@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function daoNguocMang([a,b,c]) {
+          for (let i=0;i<daoNguocMang.length;i++){
+              let d = daoNguocMang[i];
+              daoNguocMang[i]=daoNguocMang[daoNguocMang.length-1-i];
+              daoNguocMang[daoNguocMang.length-1-i] = d;
+          }console.log(daoNguocMang([a,b,c]));
+    }daoNguocMang([prompt("nhập a"),prompt("nhập b"),prompt("nhập c")]);
+</script>
+</body>
+</html>
