@@ -8,29 +8,20 @@
 <script>
     let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
     let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
-    let flag = true;
-
-    function doSao(sao) {
+    function doSao(ngoiSao,chomSao) {
+        let flag = true;
+        let saoNhap = prompt("nhập sao")
         for (let i = 0; i < ngoiSao.length; i++) {
-            if (sao != ngoiSao[i]) {
+            if (ngoiSao[i] == saoNhap ) {
+                alert(chomSao[i]);
                 flag = false;
-                break;
-            } else {
-                sao = i;
-                for (let i = 0; i < chomSao.length; i++) {
-                    if (i == chomSao[i]) {
-                        flag = true;
-                        break;
-                    }
-                }
             }
         }
-        if (flag==true) {
-            console.log("yes");
-        } else {
-            console.log("no");
+        if (flag) {
+            alert("no ");
         }
-    } doSao(prompt("nhập sao"));
+    }
+    doSao(ngoiSao,chomSao);
 </script>
 </body>
 </html>
