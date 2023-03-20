@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPalindrome(nhapChuoi) {
+        var flag = true;
+        if (nhapChuoi.length % 2 != 0) {
+            alert("no");
+        } else {
+            for (let i = 0; i < nhapChuoi.length; i++) {
+                if (nhapChuoi[i] != nhapChuoi[nhapChuoi.length - i-1 ]) {
+                    flag = false;
+                }
+            }
+            if (flag == true) {
+                console.log("số đối xứng");
+            } else {
+                console.log("ko phải số đối xứng");
+            }
+        }
+    }
+    let nhapChuoi = prompt("nhập chuỗi");
+    isPalindrome(nhapChuoi)
+</script>
+</body>
+</html>

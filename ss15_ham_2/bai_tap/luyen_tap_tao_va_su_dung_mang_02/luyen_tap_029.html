@@ -5,6 +5,31 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let mangKyTu = prompt("nhập số phần tử mảng")
+    var array =[];
+    for (let i=0;i<mangKyTu;i++) {
+        array[i] =prompt("nhập a"+'['+i+']');
+    }
 
+    function kiemTraMangKyTu(array){
+        var dem = 0;
+        var flag = true;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i]=="-"){
+                dem +=1 ;
+                flag = true;
+            } else if (array[i] != "-") {
+                flag = false;
+            }
+        } if (flag==true) {
+            console.log(dem);
+        }else {
+            console.log("-1");
+        }
+
+    }
+    kiemTraMangKyTu(array);
+</script>
 </body>
 </html>
