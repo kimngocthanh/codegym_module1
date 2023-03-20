@@ -7,29 +7,32 @@
 <body>
 <script>
     let mangKyTu = prompt("nhập số phần tử mảng")
-    var array =[];
-    for (let i=0;i<mangKyTu;i++) {
-        array[i] =prompt("nhập a"+'['+i+']');
+    var array = [];
+    for (let i = 0; i < mangKyTu; i++) {
+        array[i] = prompt("nhập a" + '[' + i + ']');
     }
+    var kyTu = prompt("nhập ký tự")
 
-    function kiemTraMangKyTu(array){
+    function kiemTraMangKyTu(array, kyTu) {
         var dem = 0;
         var flag = true;
         for (let i = 0; i < array.length; i++) {
-            if (array[i]=="-"){
-                dem +=1 ;
+            if (array[i] == kyTu) {
+                dem += 1;
                 flag = true;
-            } else if (array[i] != "-") {
+            } else if (array[i] != kyTu) {
                 flag = false;
             }
-        } if (flag==true) {
+        }
+        if (flag == true) {
             console.log(dem);
-        }else {
+        } else {
             console.log("-1");
         }
 
     }
-    kiemTraMangKyTu(array);
+
+    kiemTraMangKyTu(array, kyTu);
 </script>
 </body>
 </html>

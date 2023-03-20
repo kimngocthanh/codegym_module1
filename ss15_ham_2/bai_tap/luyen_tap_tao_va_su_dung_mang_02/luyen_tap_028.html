@@ -7,15 +7,19 @@
 <body>
 <script>
     let n = prompt("nhập số phần tử mảng")
-    var array =[];
-    for (let i=0;i<n;i++) {
-         array[i] =prompt("nhập a"+'['+i+']');
+    var array = [];
+    for (let i = 0; i < n; i++) {
+        array[i] = prompt("nhập a" + '[' + i + ']');
     }
-    function daoNguocMang(array){
-        for (let i=0;i<array.length;i++) {
-            var array1=array.reverse()
-        }console.log(array1);
-    } daoNguocMang(array);
+
+    function daoNguocMang(array) {
+        for (let i = 0; i < array.length; i++) {
+            var array1 = array.reverse()
+        }
+        console.log(array1);
+    }
+
+    daoNguocMang(array);
 
 
 </script>

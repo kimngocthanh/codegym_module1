@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
-  function kiemTra() {
-      //let flag = true;
-      let kyTu = prompt("nhập ký tự cần kiểm tra");
-      if (kyTu>='0'&&kyTu<='9'){
-          console.log("true");
-      } else {
-          console.log("false");
-      }
-  }
-  kiemTra()
+    function kiemTra(kyTu) {
+        if (kyTu >= '0' && kyTu <= '9') {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    console.log(kiemTra(prompt("nhap ký tự")));
+
+    kiemTra()
 </script>
 </body>
 </html>

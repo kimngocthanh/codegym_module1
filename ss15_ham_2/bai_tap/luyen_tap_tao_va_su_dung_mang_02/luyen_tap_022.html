@@ -6,17 +6,16 @@
 </head>
 <body>
 <script>
-  function dienTich(r) {
-    let dienTich = 3.14*r*r;
-    console.log(dienTich);
-  }
-  function chuVi(r) {
-    let chuVi = 2*3.14*r;
-    console.log(chuVi);
-  }
-  let banKinh = prompt("nhập bán kính")
-  dienTich(banKinh);
-  chuVi(banKinh);
+    function dienTich(r) {
+        return 3.14 * r * r;
+    }
+
+    function chuVi(r) {
+        return 2 * 3.14 * r;
+    }
+    let banKinh = prompt("nhập bán kính")
+    console.log("diện tích=" + dienTich(banKinh));
+    console.log("chu vi=" + chuVi(banKinh));
 </script>
 </body>
 </html>

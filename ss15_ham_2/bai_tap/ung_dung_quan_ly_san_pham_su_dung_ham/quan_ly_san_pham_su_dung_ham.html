@@ -5,14 +5,34 @@
     <title>Title</title>
 </head>
 <body>
-<h3>Add New Product</h3><br>
-<input type="text" value="New Product" id="text">
-<input type="button" value="Add" id="add" onclick="add()"><br>
-<h3>Display All Product</h3>
+<table border="1">
+    <tr>
+        <th>stt</th>
+        <th>thêm</th>
+        <th>sửa</th>
+        <th>xóa</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>samsung</td>
+        <td>sửa</td>
+        <td>xóa</td>
+    </tr>
+</table>
 <script>
-    function add() {
-        document.getElementById("text").innerText;
+    var sanPham = ["samsung", "nokia", "iphone", "lg"];
+    function taoGiaoDien(){
+        let bang ='<table border="1">'+
+            '<tr>'+
+                '<th>stt</th>'+
+                '<th>thêm</th>'+
+                '<th>sửa</th>'+
+                '<th>xóa</th>'+
+            '</tr>'+
+        '</table>'
+        
     }
+
 </script>
 <h3></h3>
 </body>
