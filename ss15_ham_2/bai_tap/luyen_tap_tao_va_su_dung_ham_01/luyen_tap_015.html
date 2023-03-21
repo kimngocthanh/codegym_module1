@@ -8,9 +8,8 @@
 <script>
     let ngoiSao = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
     let chomSao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
-    function doSao(ngoiSao,chomSao) {
+    function doSao(saoNhap) {
         let flag = true;
-        let saoNhap = prompt("nhập sao")
         for (let i = 0; i < ngoiSao.length; i++) {
             if (ngoiSao[i] == saoNhap ) {
                 alert(chomSao[i]);
@@ -21,7 +20,7 @@
             alert("no ");
         }
     }
-    doSao(ngoiSao,chomSao);
+    doSao(prompt("nhập sao nhập"));
 </script>
 </body>
 </html>

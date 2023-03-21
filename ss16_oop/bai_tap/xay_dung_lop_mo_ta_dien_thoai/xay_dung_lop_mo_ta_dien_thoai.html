@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(pin, tinNhanSoan, tinNhanHopThu, tinNhanGui) {
+            this.pin = pin;
+            this.tinNhanSoan = tinNhanSoan;
+            this.tinNhanHopThu = tinNhanHopThu;
+            this.tinNhanGui = tinNhanGui;
+        }
+
+        kiemTraTrangThai() {
+            if (this.pin <= 10) {
+                console.log("off");
+            } else if (this.pin<=100) {
+                console.log("on");
+            } else {
+                console.log("pin ko hợp lệ");
+            }
+        }
+
+        //batTatDienThoai() {
+
+        //}
+        tinNhanSoan() {
+            return tinNhanSoant ;
+        }
+
+    }let phanTramPin = new Mobile(+prompt("nhập phần trăm pin"));
+    phanTramPin.kiemTraTrangThai();
+    //let nutNguon =new
+    let tinNhanSoant = new Mobile(prompt("nhập tin nhắn soạn"))
+    console.log(tinNhanSoant.kiemTraTrangThai());
+</script>
+</body>
+</html>

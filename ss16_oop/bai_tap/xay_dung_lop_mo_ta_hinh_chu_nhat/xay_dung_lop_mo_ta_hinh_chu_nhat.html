@@ -7,14 +7,34 @@
 <body>
 <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;"></canvas>
 <script>
-class Rectangle {
-    chieuDai;
-    chieuRong;
-    tinh (chieuDai,chieuRong) {
-        this.chieuDai=chieuDai;
-        this.chieuRong=chieuRong;
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        acreage() {
+            return (this.width * this.height);
+        }
+
+        perimeter() {
+            return (2 * (this.width + this.height));
+        }
+
+        canvas() {
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.beginPath();
+            ctx.fillStyle = "red";
+            ctx.fillRect(200, 200, this.width, this.height);
+            ctx.stroke();
+        }
     }
-}
+
+    let rectangle = new Rectangle(+prompt("nhập width"), +prompt("nhập height"));
+    console.log(rectangle.acreage());
+    console.log(rectangle.perimeter());
+    rectangle.canvas();
 </script>
 </body>
 </html>

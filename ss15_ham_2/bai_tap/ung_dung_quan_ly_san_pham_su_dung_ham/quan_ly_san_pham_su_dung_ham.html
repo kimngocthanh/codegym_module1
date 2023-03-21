@@ -5,34 +5,47 @@
     <title>Title</title>
 </head>
 <body>
-<table border="1">
-    <tr>
-        <th>stt</th>
-        <th>thêm</th>
-        <th>sửa</th>
-        <th>xóa</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>samsung</td>
-        <td>sửa</td>
-        <td>xóa</td>
-    </tr>
-</table>
+<p id="taoBang"></p>
+<input type="text" id="text" value="sản phẩm muốn thêm">
+<input type="button" onclick="theSanPham()" value="thêm sản phẩm">
 <script>
     var sanPham = ["samsung", "nokia", "iphone", "lg"];
-    function taoGiaoDien(){
-        let bang ='<table border="1">'+
-            '<tr>'+
-                '<th>stt</th>'+
-                '<th>thêm</th>'+
-                '<th>sửa</th>'+
-                '<th>xóa</th>'+
-            '</tr>'+
-        '</table>'
-        
-    }
 
+    function taoGiaoDien() {
+        let bang = '<table border="1">' +
+            '<tr>' +
+            '<th id="stt">stt</th>' +
+            '<th id="them">thêm</th>' +
+            '<th>sửa</th>' +
+            '<th>xóa</th>' +
+            '</tr>';
+        for (let i = 0; i < sanPham.length; i++) {
+            bang += '<tr>' +
+                '<td>' + (i + 1) + '</td>' +
+                '<td>' + sanPham[i] + '</td>' +
+                '<td><button onClick="xoaSanPham(' + i + ')" type="button">xóa</button></td>' +
+                '<td><button onclick="suaSanPham(' + i + ')" type="button">sửa</button></td>' +
+                '</tr>'
+        }
+        bang += '</table>';
+        document.getElementById("taoBang").innerHTML = bang;
+
+    }
+    taoGiaoDien();
+    function xoaSanPham(index) {
+        sanPham.splice(index, 1);
+        taoGiaoDien();
+    }
+    function theSanPham() {
+        let sanPhamThem = document.getElementById("text").value;
+        sanPham.push(sanPhamThem)
+        document.getElementById("text").value = " ";
+        taoGiaoDien();
+    }
+    function suaSanPham(index) {
+       alert("<input type='text'>")
+
+    }
 </script>
 <h3></h3>
 </body>
