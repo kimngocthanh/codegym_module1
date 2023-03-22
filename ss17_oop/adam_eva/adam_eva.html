@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+        }
+
+        decrease() {
+            if (this.isEmpty()) {
+                alert("ăn hết táo");
+            } else {
+                this.weight--;
+            }
+        }
+
+        isEmpty() {
+            if (this.weight <= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        isMale() {
+            if (this.gender == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        setGender() {
+            if (this.isMale() == true) {
+                console.log("nam");
+            } else {
+                console.log("nữ")
+            }
+        }
+
+        checkApple(apple) {
+            if (apple.isEmpty()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        eat(apple) {
+            if (apple.getWeight() > 0) {
+                apple.decrease();
+                this.weight++;
+            } else {
+                console.log("ăn hết táo");
+            }
+        }
+    }
+
+    let apple = new Apple(10);
+    let adam = new Human("adam", 1, 70);
+    let eva = new Human("eva", 2, 50);
+    for (let i = 0; i <= apple.getWeight(); i++) {
+        adam.eat(apple);
+        eva.eat(apple);
+        console.log("dv táo="+apple.getWeight());
+        console.log("cân nặng adam="+adam.getWeight());
+        console.log("cân nặng eva="+eva.getWeight());
+        adam.setGender();
+        eva.setGender();
+    }
+
+
+</script>
+</body>
+</html>
