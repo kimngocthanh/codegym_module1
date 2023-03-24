@@ -7,7 +7,23 @@
 <body>
 <script>
     let array = "kIm  nGOc  tHANH";
-
+    let a = array.toLocaleLowerCase();
+    let d = [];
+    let b = a.replaceAll('  ', ' ').trim();
+    let c = b.split(' ');
+    console.log(c);
+    for (let i = 0; i < c.length; i++) {
+        d.push(" ")
+        for (let j = 0; j < c[i].length; j++) {
+            if (j == 0) {
+                d.push(c[i][0].toUpperCase());
+            }else {
+                d.push(c[i][j]);
+            }
+        }
+    }
+    console.log(d);
+    console.log(d.join("").trim());
 </script>
 </body>
 </html>

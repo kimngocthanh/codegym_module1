@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = "aabcc";
+    let array1 = "adbecc";
+    let array2=[];
+    let flag = true;
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array1.length; j++) {
+            if(array[i]==array1[j]){
+                flag =true;
+                break
+            }
+        }if(flag){
+            console.log(array[i]);
+        }
+    }
+</script>
+</body>
+</html>
