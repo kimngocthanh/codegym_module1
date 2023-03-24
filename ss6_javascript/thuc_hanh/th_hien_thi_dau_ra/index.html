@@ -17,13 +17,22 @@
         //document.write('xin chào');
         //console.log('xin chào');
  //   }
-      function binhphuong() {
-          let a= prompt("nhập số muốn bình phương","ví dụ: 8");
-          if (a != null)
-          {
-              document.getElementById("bp").innerHTML= Math.pow(a, 2);
-          };
-      };
+ //      function binhphuong() {
+ //          let a= prompt("nhập số muốn bình phương","ví dụ: 8");
+ //          if (a != null)
+ //          {
+ //              document.getElementById("bp").innerHTML= Math.pow(a, 2);
+ //          };
+ //      };
+ function sum_even_numbers(){
+     var sum = 0;
+     //your code here
+     for(let i=0;i<=1000;i+2){
+         sum+=i;
+     }
+     return sum;
+ }sum_even_numbers();
+ console.log(sum)
 </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let n = +prompt("nhập số phần tử của mảng a");
+    // let m = +prompt("nhập số phần tử của mảng b");
+    // let a = [];
+    // let b = [];
+    //let b1 = [];
+    let value = [];
+    let flag = true;
+    let value1 =[];
+    // for (let i = 0; i < n; i++) {
+    //     a[i] = +prompt("nhập phần tử a[" + i + "]");
+    // }
+    // for (let j = 0; j < m; j++) {
+    //     b[j] = +prompt("nhập phần tử b[" + j + "]");
+    // }
+    let a = [1, 2, 3, 4, 5, 3, 5];
+    let b = [9, 9, 5, 3, 6, 3, 5, 1, 2, 4];
+    console.log(a);
+    console.log(b);
+
+    for (let i = 0; i < b.length; i++) {
+        flag = true;
+        for (let j = 0; j < a.length; j++) {
+            if (b[i] == a[j]) {
+                flag = false;
+                break;
+            }
+        }
+        if (flag) {
+            value.push(b[i]);
+        }
+    }
+    console.log(value);
+    value1 = new Set(value);
+    console.log(value1);
+
+</script>
+</body>
+</html>

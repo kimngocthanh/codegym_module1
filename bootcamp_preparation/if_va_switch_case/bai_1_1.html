@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let luongNhanVien = +prompt("nhập tiền lương");
+  let luongRong;
+  if(luongNhanVien>1500000){
+       luongRong = luongNhanVien-luongNhanVien*20/100;
+  }else if(luongNhanVien>7000000){
+      luongRong= luongNhanVien-luongNhanVien*10/100;
+  }else if (luongNhanVien>0){
+      luongRong= luongNhanVien-luongNhanVien*5/100;
+  }else {
+      console.log("tiền ko thỏa mãn");
+  }
+  console.log(luongRong);
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhập số phần tử của mảng a");
+    let a =[];
+    let prefixSums =[];
+    for (let i=0;i<n;i++){
+        a[i]=+prompt("nhập phần tử a["+i+"]");
+    }
+    console.log(a);
+    for (let j = 0; j < a.length; j++) {
+        prefixSums[0]= a[0];
+        prefixSums[j]=prefixSums[j-1]+a[j];
+    }
+    console.log(prefixSums);
+
+
+</script>
+</body>
+</html>
