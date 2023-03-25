@@ -6,18 +6,31 @@
 </head>
 <body>
 <script>
-    let array = "aabcc";
+    let array = "aabccefgh";
     let array1 = "adbecc";
-    let array2=[];
+    let array2 = [];
     let flag = true;
     for (let i = 0; i < array.length; i++) {
+        flag = false;
         for (let j = 0; j < array1.length; j++) {
-            if(array[i]==array1[j]){
-                flag =true;
+            if (array[i] == array1[j]) {
+                flag = true;
                 break
             }
-        }if(flag){
+        }
+        if (flag == true) {
             console.log(array[i]);
+            array2.push(array[i]);
+        }
+    }
+    console.log(array2);
+    let cout = 0;
+    for (let i = 0; i < array2.length; i++) {
+        for (let j = 1; j < array2.length; j++) {
+            if (array2[i] == array2[j]) {
+                cout++;
+                break;
+            }
         }
     }
 </script>
