@@ -5,6 +5,144 @@
     <title>Title</title>
 </head>
 <body>
+<p id="tablel"></p>
+<button onclick="addStudent()">Thêm mới học viên</button>
+<button onclick="editStudent()">Sửa thông tin học viên</button>
+<button onclick="delStudent()">xóa học viên</button>
+<script>
+    class Student {
+        constructor(id, name, grade, email, date, module) {
+            this.id = id;
+            this.name = name;
+            this.grade = grade;
+            this.email = email;
+            this.date = date;
+            this.module = module;
+        }
 
+        setId(id) {
+            this.id = id;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setGrade(grade) {
+            this.grade = grade;
+        }
+
+        setEmail(email) {
+            this.email = email;
+        }
+
+        setDate(date) {
+            this.date = date;
+        }
+
+        setModule(module) {
+            this.module = module;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getGrade() {
+            return this.grade;
+        }
+
+        getEmail() {
+            return this.email;
+        }
+
+        getDate() {
+            return this.date;
+        }
+
+        getModule() {
+            return this.module;
+        }
+    }
+
+    let student =
+        [
+            new Student(1, "Kim Ngọc Thành", "C0223G1", "abc@gamil.com", "13/09/2001", 1),
+            new Student(2, "Lý Thanh Hải", "C0223G1", "abcd@gamil.com", "14/09/2001", 1),
+            new Student(3, "Nguyễn Anh Nhàn", "C0223G1", "avbc@gamil.com", "15/09/2001", 1),
+            new Student(4, "Lê Thị Yến Hoa", "C0223G1", "abcsdas@gamil.com", "16/09/2001", 1),
+        ]
+
+    function display() {
+        let table = '<table border="1">' +
+            '<tr>' +
+            '<th>Mã học viên</th>' +
+            '<th>Tên</th>' +
+            '<th>Lớp</th>' +
+            '<th>Email</th>' +
+            '<th>Ngày sinh</th>' +
+            '<th>Module</th>' +
+            '</tr>';
+        for (let i = 0; i < student.length; i++) {
+            table += '<tr>' +
+                '<tr>' +
+                '<td>' + student[i].getId() + '</td>' +
+                '<td>' + student[i].getName() + '</td>' +
+                '<td>' + student[i].getGrade() + '</td>' +
+                '<td>' + student[i].getEmail() + '</td>' +
+                '<td>' + student[i].getDate() + '</td>' +
+                '<td>' + student[i].getModule() + '</td>' +
+                '</tr>'
+        }
+        table += '</table>';
+        document.getElementById("tablel").innerHTML = table;
+    }
+
+    function delStudent() {
+        let del = prompt("nhập id bạn muốn xóa");
+        for (let i = 0; i < student.length; i++) {
+            if (student[i].getId() == del) {
+                student.splice(i, 1);
+                display();
+            }
+        }
+    }
+
+    function addStudent() {
+        let id = prompt("nhập id");
+        let name = prompt("nhập tên");
+        let grade = prompt("nhập lớp");
+        let email = prompt("nhập email");
+        let date = prompt("nhập ngày ");
+        let module = prompt("nhập module ");
+        let addStudent =new Student(id,name,grade,email,date,module);
+        student.push(addStudent);
+        display();
+    }
+
+    function editStudent() {
+        let edit = prompt("nhập id bạn muốn cần sửa");
+        for (let i = 0; i < student.length; i++) {
+            if(edit==student[i].getId()){
+                let id = prompt("nhập id sửa lại");
+                let name = prompt("nhập tên sửa lại");
+                let grade = prompt("nhập lớp sửa lại");
+                let email = prompt("nhập email sửa lại");
+                let date = prompt("nhập ngày sửa lại");
+                let module = prompt("nhập lại module");
+                let editStudent = new Student(id,name,grade,email,date,module);
+                student.splice(i,1)
+                student.splice(i,0,editStudent);
+                display();
+            }
+        }
+    }
+
+    display()
+</script>
 </body>
 </html>
