@@ -6,16 +6,20 @@
 </head>
 <body>
 <script>
-    let array = "aabccefgh";
-    let array1 = "adbecc";
+    let array = "aabcc";
+    let array1 = "aaadce";
+    let array11 = array1.split("");
     let array2 = [];
+    let cout = 0;
     let flag = true;
     for (let i = 0; i < array.length; i++) {
         flag = false;
-        for (let j = 0; j < array1.length; j++) {
-            if (array[i] == array1[j]) {
+        for (let j = 0; j < array11.length; j++) {
+            if (array[i] == array11[j]) {
+                array11.splice(j, 1);
+                cout++;
                 flag = true;
-                break
+                break;
             }
         }
         if (flag == true) {
@@ -24,15 +28,7 @@
         }
     }
     console.log(array2);
-    let cout = 0;
-    for (let i = 0; i < array2.length; i++) {
-        for (let j = 1; j < array2.length; j++) {
-            if (array2[i] == array2[j]) {
-                cout++;
-                break;
-            }
-        }
-    }
+    console.log(cout);
 </script>
 </body>
 </html>

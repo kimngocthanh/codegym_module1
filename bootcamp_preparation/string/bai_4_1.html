@@ -6,24 +6,32 @@
 </head>
 <body>
 <script>
-    let array = "kIm  nGOc  tHANH";
+    let array = "kIm  nGOc  tHANH  abc";
     let a = array.toLocaleLowerCase();
+    let b = a.split("");
     let d = [];
-    let b = a.replaceAll('  ', ' ').trim();
-    let c = b.split(' ');
-    console.log(c);
-    for (let i = 0; i < c.length; i++) {
-        d.push(" ")
-        for (let j = 0; j < c[i].length; j++) {
-            if (j == 0) {
-                d.push(c[i][0].toUpperCase());
-            }else {
-                d.push(c[i][j]);
-            }
+    for (var i = 0; i < b.length; i++) {
+        if (b[i] == " " && b[i + 1] ==" ") {
+            b.splice(i+1,1);
         }
     }
-    console.log(d);
-    console.log(d.join("").trim());
+    let c=b.join('');
+    let e=c.split( ' ')
+    console.log(e);
+    for (let i = 0; i < e.length; i++){
+        d.push(' ')
+        for (let j = 0; j < e[i].length; j++) {
+            if(j==0){
+                d.push(e[i][0].toUpperCase());
+            }else {
+                d.push(e[i][j]);
+            }
+        }
+    }console.log(d.join('').trim());
+
+
+
+
 </script>
 </body>
 </html>
