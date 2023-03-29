@@ -18,20 +18,24 @@
         let dem = 0;
         for (let i = 0; i < array.length; i++) {
             for (let j = 0; j < array[i].length; j++) {
-                flag =true;
-                //console.log("[" + i + "]" + "[" + j + "] =" + array[i][j])if (array[i][j] < 2) {
-                for (let m = 2; m <= Math.sqrt(array[i][j]); m++) {
-                    if (array[i][j] % m == 0) {
-                        flag = false;
+                flag = true;
+                if (array[i][j] == 1 || array[i][j] == 2) {
+                    flag = false;
+                } else {
+                    //console.log("[" + i + "]" + "[" + j + "] =" + array[i][j])if (array[i][j] < 2) {
+                    for (let m = 2; m <= Math.sqrt(array[i][j]); m++) {
+                        if (array[i][j] % m == 0) {
+                            flag = false;
+                        }
                     }
-                }if (flag) {
-                    console.log(array[i][j]);
-                    dem++;
+                    if (flag) {
+                        console.log(array[i][j]);
+                        dem++;
+                    }
                 }
-
             }
         }
-        console.log("dem"+dem);
+        console.log("dem" + dem);
     }
 </script>
 </body>

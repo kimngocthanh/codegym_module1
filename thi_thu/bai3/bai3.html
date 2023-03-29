@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1, 5, 6, 13, 9, 12, 8, 0, 5, 1]
+
+    function tim(arr) {
+        console.log(arr);
+        let max = arr[0]
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        let a = 0;
+        let b = 1;
+        let tong = 0;
+        let arr1 = [];
+        let arr2 = [];
+        arr1.push(tong);
+        for (let i = 0; i < max; i++) {
+            tong = a + b;
+            a = b;
+            b = tong;
+            arr1.push(tong);
+        }
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (arr1[i] == arr[j]) {
+                    arr2.push(arr1[i]);
+                }
+            }
+        }
+        return arr2;
+    }
+
+    console.log(tim(arr))
+
+</script>
+</body>
+</html>

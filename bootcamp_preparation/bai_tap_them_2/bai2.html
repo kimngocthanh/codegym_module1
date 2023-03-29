@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let dem1 = 0;
+    let dem2 = 0;
+    let doDaiMang = +prompt("nhập độ dài mảng");
+    for (let i = 0; i < doDaiMang; i++) {
+        array[i] = +prompt("nhập phần tử array[" + i + "]");
+        if (array[i] % 2 == 0) {
+            dem1++;
+        } else {
+            dem2++;
+        }
+    }
+    if (dem1 == dem2) {
+        console.log("oke");
+    } else {
+        console.log("no");
+    }
+    console.log(array);
+</script>
+</body>
+</html>

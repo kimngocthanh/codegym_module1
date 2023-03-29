@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let doDaiMang = +prompt("nhập độ dài mảng");
+    let flag = false;
+    for (let i = 0; i < doDaiMang; i++) {
+        array[i] = +prompt("nhập phần tử a[" + i + "]");
+    }
+    for (let i = 0; i < array.length / 2; i++) {
+        for (let j = doDaiMang; j > array.length / 2; j--) {
+            if (array[i] == array[j]) {
+                flag = true;
+                break;
+            }
+        }
+    }
+    if (flag) {
+        console.log("yes");
+    } else {
+        console.log("no");
+    }
+    console.log(array);
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienThi"></p>
+<input type="text" id="ma">
+<input type="text" id="tenSanPham">
+<input type="text" id="giaTien">
+<button onclick="themSanPham()">thêm sản phẩm</button>
+<script>
+    class SanPham {
+        constructor(ma, ten, gia) {
+            this.ma = ma;
+            this.ten = ten;
+            this.gia = gia;
+        }
+
+        getMa(ma) {
+            this.ma = ma;
+        }
+
+        getTen(ten) {
+            this.ten = ten;
+        }
+
+        getGia(gia) {
+            this.gia = gia;
+        }
+
+        setMa() {
+            return this.ma;
+        }
+
+        setTen() {
+            return this.ten;
+        }
+
+        setGia() {
+            return this.gia;
+        }
+    }
+
+    let sanPham = [
+        new SanPham(1, "SamSung", 2000000),
+        new SanPham(2, "Nokia", 2000000),
+        new SanPham(3, "Nokia", 2000000),
+        new SanPham(4, "Nokia", 2000000),
+        new SanPham(5, "Lg", 2000000)
+    ]
+
+    function hienThi() {
+        let bang = "<table border='1'>" +
+            "<tr>" +
+            "<th>ma</th>" +
+            "<th>ten</th>" +
+            "<th>gia</th>" +
+            "<th>xóa</th>" +
+            "</tr>"
+        for (let i = 0; i < sanPham.length; i++) {
+            bang += "<tr>" +
+                "<td>" + sanPham[i].ma + "</td>" +
+                "<td>" + sanPham[i].ten + "</td>" +
+                "<td>" + sanPham[i].gia + "</td>" +
+                "<td>" + "<button onclick='del(" + i + ")' >xóa </button>" + "</td>" +
+                "</tr>"
+        }
+        bang += "</table>"
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+
+    hienThi();
+
+    function del(i) {
+        sanPham.splice(i, 1);
+        hienThi();
+    }
+
+    function themSanPham() {
+        let sanPhamThem = new SanPham(
+                document.getElementById("ma").value,
+                document.getElementById("tenSanPham").value,
+                document.getElementById("giaTien").value
+        )
+        sanPham.push(sanPhamThem);
+        document.getElementById("hienThi").value = " ";
+        hienThi();
+    }
+</script>
+</body>
+</html>

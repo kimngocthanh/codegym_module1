@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = "object     Oriented               programming ";
+
+    function chuyenDoi(arr) {
+        let array = [];
+        console.log(arr);
+        let arr1 = arr.toLowerCase()
+        console.log(arr1);
+        let arr2 = arr1.replaceAll("  ", "")
+        let arr3 = arr2.split(" ");
+        console.log(arr3)
+        for (let i = 0; i < arr3.length; i++) {
+            for (let j = 0; j < arr3[i].length; j++) {
+                if (j == 0) {
+                    array.push(arr3[i][j])
+                }
+            }
+        }
+        console.log(array.join("").toUpperCase());
+    }
+
+    chuyenDoi(array)
+
+</script>
+</body>
+</html>

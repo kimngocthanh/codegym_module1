@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienthibang"></p>
+<input type="text" id="ma">
+<input type="text" id="tenMay">
+<input type="text" id="tenHang">
+<input type="text" id="giaBan">
+<button onclick="sapXep()">sắp xếp</button>
+<button onclick="themSanPham()">thêm sản phẩm</button>
+<script>
+    class MayTinh {
+        constructor(maMayTinh, tenMay, tenHang, giaBan) {
+            this.maMayTinh = maMayTinh;
+            this.tenMay = tenMay;
+            this.tenHang = tenHang;
+            this.giaBan = giaBan;
+        }
+
+        getMaMayTinh(maMayTinh) {
+            this.maMayTinh = maMayTinh;
+        }
+
+        getTenMay(tenMay) {
+            this.tenMay = tenMay;
+        }
+
+        getTenHang(tenHang) {
+            this.tenHang = tenHang;
+        }
+
+        getGiaBan(giaBan) {
+            this.giaBan = giaBan;
+        }
+
+        setMaMayTinh() {
+            return this.maMayTinh;
+        }
+
+        setTenMay() {
+            return this.tenMay;
+        }
+
+        setTenHang() {
+            return this.tenHang;
+        }
+
+        setGiaBan() {
+            return this.giaBan;
+        }
+
+        toString() {
+            return this.setMaMayTinh() + this.setTenMay() + this.setTenHang() + this.setGiaBan();
+        }
+    }
+
+    let mayTinh = [
+        new MayTinh(1, "dell01", "dell", 2000000),
+        new MayTinh(2, "dell02", "dell", 2300000),
+        new MayTinh(3, "dell03", "dell", 2200000),
+        new MayTinh(4, "dell04", "dell", 2100000)
+    ]
+    hienThi();
+
+    function hienThi() {
+        let bang = '<table border="1">' +
+            '<tr>' +
+            '<th>mã máy</th>' +
+            '<th>tên máy</th>' +
+            '<th>tên hãng</th>' +
+            '<th>giá</th>' +
+            '</tr>'
+        for (let i = 0; i < mayTinh.length; i++) {
+            bang += '<tr>' +
+                '<td>' + mayTinh[i].setMaMayTinh() + '</td>' +
+                '<td>' + mayTinh[i].setTenMay() + '</td>' +
+                '<td>' + mayTinh[i].setTenHang() + '</td>' +
+                '<td>' + mayTinh[i].setGiaBan() + '</td>' +
+                '</tr>'
+        }
+        bang += '</table>'
+        document.getElementById("hienthibang").innerHTML = bang;
+    }
+
+    function themSanPham() {
+        let mayTinhThem = new MayTinh(
+            document.getElementById("ma").value,
+            document.getElementById("tenMay").value,
+            document.getElementById("tenHang").value,
+            document.getElementById("giaBan").value
+        )
+        mayTinh.push(mayTinhThem);
+        document.getElementById("hienthibang").value = " ";
+        hienThi();
+    }
+
+    function sapXep() {
+        for (let i = 0; i < mayTinh.length; i++) {
+            mayTinh.sort()
+        }
+        document.getElementById("hienthibang").value = " ";
+        hienThi();
+    }
+
+    for (let i = 0; i < mayTinh.length; i++) {
+        document.write("<br>");
+        document.write(mayTinh[i].toString() + "<br>");
+    }
+
+
+</script>
+</body>
+</html>

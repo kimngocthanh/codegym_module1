@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let tong = 0;
+    let doDaiMang = +prompt("nhập độ dài mảng");
+    for (let i = 0; i < doDaiMang; i++) {
+        array[i] = +prompt("nhập phần tử array[" + i + "]");
+    }
+    for (let i = 1; i <array.length ; i+=2) {
+        if(array[i]%2==0){
+            tong+=array[i];
+        }
+    }
+    console.log(array);
+    console.log(tong);
+
+</script>
+</body>
+</html>
